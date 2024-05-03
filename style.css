@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+      padding: 0;
+  }
+  div{
+    background: url(carolina-nichitin-5OY83OiKlNQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  h2{
+    font-size: 80px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    padding: 20px;
+  }
+  .maindiv{
+     background-color: rgb(4, 4, 51);
+     background-position: center;
+     background-size: cover;
+     width: 30%;
+     height: fit-content;
+     border-radius: 9px;
+     margin: auto;
+     padding: 20px;
+  }
+  h1{
+    color: red;
+    text-align: center;
+    border-bottom: 10px;
+   
+  }
+  
+  input{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    outline: none;
+    border-radius:5px;
+    outline: none;
+    border: 0;
+    padding: 4px;
+  }
+  label{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(245, 245, 245, 0.774);
+  }

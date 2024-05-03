@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <h2>
+        Get the best <br />
+        luxury <br />
+        money can <br />
+        buy
+      </h2>
+      <main class="maindiv">
+        <h1>SIGN UP</h1>
+        <p id="eniola"></p>
+        <form action="">
+          <label for="">First Name</label>
+          <input type="text" placeholder="input firstname" id="fname" /><br />
+          <br />
+          <label for="">Last Name</label>
+          <input type="text" placeholder="input lastname" id="lname" /><br />
+          <br />
+          <label for="">Email Address</label>
+          <input
+            type="email"
+            placeholder="input email Address"
+            id="email"
+          /><br />
+          <br />
+          <label for="">Password</label>
+          <input
+            type="password"
+            placeholder="input password"
+            id="password"
+          /><br />
+          <br />
+          <label for="">Confirm Password</label>
+          <input
+            type="password"
+            placeholder="input  confirm Password"
+            id="confirm_password"
+          /><br />
+          <br />
+
+          <input type="submit" id="checkForm" />
+        </form>
+      </main>
+    </div>
+
+    
+
+    <script>
+      let checkForm = document.getElementById("checkForm");
+      let fname = document.getElementById("fname");
+      let lname = document.getElementById("lname");
+      let email = document.getElementById("email");
+      let password = document.getElementById("password");
+      let confirm_password = document.getElementById("confirm_password");
+      let eniola = document.getElementById("eniola");
+
+      checkForm.addEventListener('click', (e)=>{
+
+        e.preventDefault()
+
+      if (
+        fname.value == "" ||
+        lname.value == "" ||
+        email.value == "" ||
+        password.value == "" ||
+        confirm_password.value == ""
+      ) {
+        eniola.innerHTML = "👀 All fields are required?";
+        eniola.style.color = "red";
+        setTimeout(()=>{
+            window.location.reload()
+        }, 2000)
+      } else if (password.value == confirm_password.value) {
+        eniola.innerHTML = "success 👍";
+        eniola.style.color = "green";
+        setTimeout(()=>{
+            window.location.href = './css1.html'
+        }, 2000)
+      } else {
+        eniola.innerHTML = "Something is not right wi   th the password🙁 ";
+        eniola.style.color = "red";
+        setTimeout(()=>{
+            window.location.reload()
+        }, 2000)
+      }
+
+    })
+    </script>
+   
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div>
+        <h1>WELCOME TO MY WEBSITES </h1>
+        <p id="mercy"></p>
+        <label for="">USERNAME</label><br>
+        <input type="text" placeholder="insert usernmae" id="finame"><br><br>
+        <label for="">PASSWORD</label><br>
+        <input type="text" placeholder="insert password"  id="sename"><br> <br>
+        <button id="clickme">LOG IN</button><br>
+        <button id="create">Create a new account</button>
+    </div>
+    <script>
+        
+        let finame = document.getElementById('finame')
+        let sename = document.getElementById('sename')
+        let clickme = document.getElementById('clickme')
+        
+         clickme.addEventListener('click', function(){
+            
+        if (finame. value == "" || sename.value == ''){
+               
+               mercy.innerHTML = '😩 FILL  ALL?';
+               mercy.style.color = 'red';
+        }
+         })
+         
+
+
+         let create = document.getElementById('create')
+            create.addEventListener('click',()=>{
+                setTimeout(()=>{
+            window.location.href = './css.html'
+        }, 2000)
+            })
+         
+         
+
+         
+    </script>
+</body>
+</html>
